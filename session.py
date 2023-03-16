@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template("form.html")
 
-@app.route("/valida", methods=['POST', 'DELETE'])
+@app.route("/valida", methods=['POST'])
 def valida_sessao():
     if request.method == 'POST':
         if request.form.get('nomeAluno'):
