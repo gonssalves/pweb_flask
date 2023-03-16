@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+</head>
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+
+    <form method = "post" action = "http://127.0.0.1:5000/valida" >
+        <hr>
+        Nome do aluno: <input type="text" name="nomeAluno"/> *<br/>
+        Nascimento (dd/mm/aaaa): <input type="text" name="diaNascimento" size="1px"/> / 
+        <input type="text" name="mesNascimento" size="1px"/> 
+        / <input type="text" name="anoNascimento" size="1px"/> *<br/>
+        Nome da mãe: <input type="text" name="nomeMae"/> *<br/>
+        Nome do pai: <input type="text" name="nomePai"/> *<br/>
+        Telefone: DDD(<input type="text" name="ddd" size="1px"/>) * 
+        Tel<input type="text" name="tel" size="10px"/> *
+        Ramal:<input type="text" name="ramal" size="4px"/> *<br/>
+        E-mail: <input type="text" name="email"/> *<br/>
+
+        <hr>
+
+        
+        <h3>Informações de Matrícula</h3>
+
+        Série: <br>
+        <select name="serie" id="serie">
+            <option value="ensInfantil">Ensino infantil</option>
+            <option value="ensFundamentalI">Ensino fundamental I</option>
+            <option value="ensFundamentalII">Ensino fundamental II</option>
+            <option value="ensMedio">Ensino Médio</option>
+        </select> *
+
+        <br>
+        <br>
+
+
+        Turno: * <br>
+        <input type = "radio" name = "turno" value = "manha"> <label>Manhã</label> <br>  
+        <input type = "radio" name =  "turno" value = "tarde"> <label>Tarde</label>
+
+        <br>
+        <br>
+
+        Atividades Extracurriculares: <br>
+        <input type = "checkbox" id = "informatica" name="atv_extra" value="informatica"> <label for="informatica">Informática</label> <br> 
+        <input type = "checkbox" id = "musica" name="atv_extra" value="musica"> <label for="musica">Música</label> <br>
+        <input type = "checkbox" id = "balet" name="atv_extra" value="balet"> <label for="balet"> Balet</label> <br> 
+        <input type = "checkbox" id = "pintura" name="atv_extra" value="pintura"> <label for="pintura"> Pintura</label> <br> 
+        <input type = "checkbox" id = "judo" name="atv_extra" value="judo"> <label for="judo"> Judô</label> <br> 
+        <input type = "checkbox" id = "futebol" name="atv_extra" value="futebol"> <label for="futebol"> Futebol</label> <br>
+        
+        
+
+        <hr>
+
+
+        <input type="submit" value="Enviar Formulário" />
+        <input type="reset" value="Limpar Campos" />
+      </form>
+</body>
+</html>
