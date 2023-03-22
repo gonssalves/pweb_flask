@@ -32,9 +32,9 @@ def valida_sessao():
         
         try:
             if not int(ddd) in listaDDD:
-                requests2['DDD'] = ''
+                requests2['ddd'] = ''
         except:
-            requests2['DDD'] = ''
+            requests2['ddd'] = ''
 
         email = request.form['email']
         
@@ -72,6 +72,3 @@ def valida_sessao():
             data2['ramal'] = ''
         
         return render_template('resposta.html', data=requests2, data2 = data2, requests=requests)
-            
-    else: 
-        return 'estou esperando um post'
