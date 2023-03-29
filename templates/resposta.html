@@ -1,59 +1,7 @@
 <html>
     <body>
-        {% if data2|length >= 1 %}
-            {% for key, value in data2.items() %}
-                {% if key == 'nomeAluno' %}
-                    <p>O campo Nome do Aluno é invalido.</p>
-                {% elif key == 'diaNascimento' %}
-                <p>O campo Dia do Nascimento é invalido.</p>
-
-                {% elif key == 'mesNascimento' %}
-                    <p>O campo  Mês do Nascimento é invalido.</p>
-
-                {% elif key == 'anoNascimento' %}
-                    <p>O campo Ano do Nascimento é invalido.</p>
-
-                {% elif key == 'nascimento' %}
-                <p>A data de nascimento informada está incorreta.</p>
-
-                {% elif key == 'nomeMae' %}
-                    <p>O campo Nome da Mãe é invalido.</p>
-
-                {% elif key == 'nomePai' %}
-                    <p>O campo Nome do Pai é invalido.</p>
-
-                {% elif key == 'ddd' %}
-                    <p>O campo DDD é invalido.</p>
-
-                {% elif key == 'tel' %}
-                    <p>O campo Telefone é invalido.</p>
-                {% elif key == 'ramal' %}
-                    <p>O campo Ramal é invalido.</p>
-
-                {% elif key == 'email' %}
-                    <p>O campo Email é invalido.</p>
-
-                {% elif key == 'turno' %}
-                    <p>O campo Turno é invalido.</p>
-
-                {% elif key == 'atv_extra' %}
-                    <p>O número máximo de Atividades Extracurriculares é 3.</p>
-                {% endif %}
-            {% endfor %}
-        {% else %}
-            <h1>Dados enviados</h1>
-        {% endif %}
+        {% for key, value in data.items() %}
+            <p>O campo "{{ key }}" é invalido.</p>
+        {% endfor %}
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
